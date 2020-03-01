@@ -19,5 +19,6 @@
   "bugs": {
     "url": "https://github.com/carlossecato/runslackdotrun/issues"
   },
-  "homepage": "https://github.com/carlossecato/runslackdotrun#readme"
+  "homepage": "https://github.com/carlossecato/runslackdotrun#readme",
+  "dependencies": {}
 }

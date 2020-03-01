@@ -20,5 +20,7 @@
     "url": "https://github.com/carlossecato/runslackdotrun/issues"
   },
   "homepage": "https://github.com/carlossecato/runslackdotrun#readme",
-  "dependencies": {}
+  "dependencies": {
+    "gh-pages": "^2.2.0"
+  }
 }

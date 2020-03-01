@@ -7,6 +7,7 @@
   },
   "main": "teste.js",
   "scripts": {
+  	"start": "node src/teste.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

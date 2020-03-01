@@ -1,1 +1,1 @@
-window.location.href="http://runslackdotrun.c1.biz/"
+window.location.href="https://carlossecato.github.io/runslackdotrun/"

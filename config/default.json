@@ -1,9 +1,9 @@
 {
     "app": {
-        "port": 3000
+        "port": 80
     },
     "db": {
-        "host": "localhost",
+        "host": "185.176.43.84",
         "port": 27017,
         "name": "ydb"
     }

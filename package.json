@@ -23,6 +23,7 @@
   "homepage": "https://github.com/carlossecato/runslackdotrun#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "gh-pages": "^2.2.0"
+    "gh-pages": "^2.2.0",
+    "ws": "^7.2.1"
   }
 }

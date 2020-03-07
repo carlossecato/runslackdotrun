@@ -4,6 +4,7 @@ var http = require("http");
 var express = require("express");
 var app = express();
 var port = process.env.PORT || 5000;
+var auth = require('./auth');
 
 app.use(express.static(__dirname + "/"))
 
@@ -20,8 +21,9 @@ wss.on("connection", function(ws) {
     ws.send(JSON.stringify(new Date()), function() {  })
   }, 1000)
 
+app.use('/auth',auth);
   console.log("websocket connection open")
-
+module.exports = router;
   ws.on("close", function() {
     console.log("websocket connection close")
     clearInterval(id)

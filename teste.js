@@ -23,7 +23,7 @@ wss.on("connection", function(ws) {
 
 app.use('/auth',auth);
   console.log("websocket connection open")
-module.exports = router;
+
   ws.on("close", function() {
     console.log("websocket connection close")
     clearInterval(id)

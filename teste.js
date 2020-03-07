@@ -21,6 +21,9 @@ wss.on("connection", function(ws) {
     ws.send(JSON.stringify(new Date()), function() {  })
   }, 1000)
 
+app.get('/', function (req, res) {
+    res.send('<html><body><h1>Hello World</h1></body></html>');
+});
 
   console.log("websocket connection open")
 

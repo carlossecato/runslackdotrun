@@ -21,7 +21,7 @@ wss.on("connection", function(ws) {
     ws.send(JSON.stringify(new Date()), function() {  })
   }, 1000)
 app.get('/auth', function(req,res){
-  res.send(auth)
+  res.send('auth');
 })
 
   console.log("websocket connection open")

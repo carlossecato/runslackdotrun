@@ -21,7 +21,7 @@ wss.on("connection", function(ws) {
     ws.send(JSON.stringify(new Date()), function() {  })
   }, 1000)
 
-app.get('/teste', function (req, res) {
+app.use('/teste', function (req, res) {
     res.send('<html><body><h1>Hello World</h1></body></html>');
 });
 

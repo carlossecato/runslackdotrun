@@ -12,5 +12,7 @@ client.query('SELECT table_schema,table_name FROM information_schema.tables;', (
   for (let row of res.rows) {
     console.log(JSON.stringify(row));
   }
+
+ client.query(' CREATE TABLE public.users (id UUID NOT NULL, “firstName” CHAR(64), “lastName” CHAR(64), email CHAR(128), password CHAR(60),CONSTRAINT users_pkey PRIMARY KEY(id))WITH (oids = false);')
   client.end();
 });

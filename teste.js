@@ -24,8 +24,8 @@ app.set('view engine', 'pug');
 app.set('view options', { layout: false });
 require('./lib/routes.js')(app);
 var path = require('path');
-var updater = require( path.resolve( __dirname, "./db.js" ) );
-updater('/join');
+//var updater = require( path.resolve( __dirname, "./db.js" ) );
+//updater('/join');
 
 
 app.use(express.static(__dirname + "/"))

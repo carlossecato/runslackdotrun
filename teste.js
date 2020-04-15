@@ -23,6 +23,9 @@ app.use(bodyParser());
 app.set('view engine', 'pug');
 app.set('view options', { layout: false });
 require('./lib/routes.js')(app);
+var path = require('path');
+var updater = require( path.resolve( __dirname, "./db.js" ) );
+updater('/join');
 
 
 app.use(express.static(__dirname + "/"))
@@ -36,7 +39,7 @@ var wss = new WebSocketServer({server: server})
 console.log("websocket server created")
 
 
-app.get('/auth', function (req, res) {
+app.get('/login', function (req, res) {
     res.sendFile(__dirname + '/auth.html')
 });
 

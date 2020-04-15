@@ -2,17 +2,25 @@
 <head>
 <title>Javascript Login Form Validation</title>
 <!-- Include JS File Here -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
 <script src="js/login.js"></script>
 </head>
 <body>
 <div class="container">
-<form id="form_id" method="post" name="myform">
+	<div class="row">
+		<div class="col-md-4.offset-md-4#loginBox">
+	<div class='account-wall'>
+<form  class='form-signin' id="form_id" method="post" name="myform">
 <label>User Name :</label>
-<input type="text" name="username" id="username"/>
+<input class='form-control' type="text" name="username" id="username"/>
 <label>Password :</label>
-<input type="password" name="password" id="password"/>
-<input type="button" value="Login" id="submit" onclick="validate()"/>
+<input class='form-control' type="password" name="password" id="password"/>
+<input type="button" class='btn btn-lg btn-primary btn-block' value="Login" id="submit" onclick="validate()"/>
 </form>
+</div>
+</div>
+</div>
 </div>
 </body>
 </html>

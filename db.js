@@ -1,11 +1,11 @@
 const { Client } = require('pg');
 var express = require("express");
 var app = express();
-var conString = "postgres://carlossecato:1234@localhost/carlosdb";
+//var conString = "postgres://carlossecato:1234@localhost/carlosdb";
 
 module.exports = function (app) {
 const client = new Client({
-  connectionString: process.env.DATABASE_URL || conString,
+  connectionString: process.env.DATABASE_URL,
   
   ssl: {
    rejectUnauthorized: false

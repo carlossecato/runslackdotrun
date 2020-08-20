@@ -23,7 +23,7 @@
   "homepage": "https://github.com/carlossecato/runslackdotrun#readme",
   "dependencies": {
     "acorn": "^7.1.1",
-    "bcrypt": "^4.0.1",
+    "bcrypt": "^5.0.0",
     "connect-flash": "^0.1.1",
     "cookie-parser": "^1.4.5",
     "express": "^4.17.1",
